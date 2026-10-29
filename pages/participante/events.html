@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Próximos eventos — EventSales</title>
+    <link rel="icon" href="../../img/ico.ico">
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body class="events-page">
+    <header class="events-header">
+        <a class="logo" href="../../index.html">
+            <span class="logo__mark"></span>
+            EventSales
+        </a>
+        <nav class="events-header__user" aria-label="Cuenta">
+            <a class="events-header__tickets" href="../participante/confirmation.html">Mis entradas</a>
+            <a class="events-header__avatar" href="../auth/login.html" aria-label="Mi cuenta">U</a>
+        </nav>
+    </header>
+
+    <main class="events-main">
+        <section class="events-intro" aria-labelledby="events-title">
+            <h1 id="events-title">Próximos eventos</h1>
+            <p>Encuentra y reserva tus entradas.</p>
+        </section>
+
+        <section class="events-filters" aria-label="Filtros de eventos">
+            <form class="events-search" action="events.html" method="get">
+                <label class="events-search__field">
+                    <img class="events-search__icon" src="../../img/icon-search.svg" alt="">
+                    <span class="sr-only">Buscar eventos, artistas o lugares</span>
+                    <input class="events-search__input" type="search" name="q" placeholder="Buscar eventos, artistas o lugares">
+                </label>
+            </form>
+            <nav class="events-categories" aria-label="Categorías">
+                <a class="events-chip events-chip--active" href="events.html">Todos</a>
+                <a class="events-chip" href="events.html">Música</a>
+                <a class="events-chip" href="events.html">Teatro</a>
+                <a class="events-chip" href="events.html">Tecnología</a>
+                <a class="events-chip" href="events.html">Deportes</a>
+                <a class="events-chip" href="events.html">Gastronomía</a>
+            </nav>
+        </section>
+
+        <section class="events-grid" aria-label="Lista de próximos eventos">
+            <article class="events-card">
+                <div class="events-card__image" role="img" aria-label="Imagen de Neon Nights Festival"></div>
+                <span class="events-card__tag">Música</span>
+                <div class="events-card__info">
+                    <p class="events-card__date">SÁB 14 DIC · 20:00</p>
+                    <h2 class="events-card__title">Neon Nights Festival</h2>
+                    <p class="events-card__place">Arena Central</p>
+                    <div class="events-card__footer">
+                        <p class="events-card__price-group">
+                            <span class="events-card__from">Desde</span>
+                            <span class="events-card__price">S/ 45</span>
+                        </p>
+                        <a class="btn btn--secondary" href="event-detail.html">Ver entradas</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="events-card">
+                <div class="events-card__image" role="img" aria-label="Imagen de Symphony Under Stars"></div>
+                <span class="events-card__tag">Teatro</span>
+                <div class="events-card__info">
+                    <p class="events-card__date">VIE 20 DIC · 19:30</p>
+                    <h2 class="events-card__title">Symphony Under Stars</h2>
+                    <p class="events-card__place">Teatro Nacional</p>
+                    <div class="events-card__footer">
+                        <p class="events-card__price-group">
+                            <span class="events-card__from">Desde</span>
+                            <span class="events-card__price">S/ 60</span>
+                        </p>
+                        <a class="btn btn--secondary" href="event-detail.html">Ver entradas</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="events-card">
+                <div class="events-card__image" role="img" aria-label="Imagen de Tech &amp; Beats Live"></div>
+                <span class="events-card__tag">Tecnología</span>
+                <div class="events-card__info">
+                    <p class="events-card__date">SÁB 11 ENE · 21:00</p>
+                    <h2 class="events-card__title">Tech &amp; Beats Live</h2>
+                    <p class="events-card__place">Club Aurora</p>
+                    <div class="events-card__footer">
+                        <p class="events-card__price-group">
+                            <span class="events-card__from">Desde</span>
+                            <span class="events-card__price">S/ 35</span>
+                        </p>
+                        <a class="btn btn--secondary" href="event-detail.html">Ver entradas</a>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
